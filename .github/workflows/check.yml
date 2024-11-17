@@ -2,9 +2,9 @@ name: Django CI
 
 on:
   push:
-    branches: [main, dev, docker_test]
+    branches: [main, dev]
   pull_request:
-    branches: [main, dev, docker_test]
+    branches: [main, dev]
 
 jobs:
   test:
@@ -29,5 +29,4 @@ jobs:
         run: poetry run isort . --check-only
 
       - name: Run Mypy
-        run: |
-        poetry run mypy .
+        run: poetry run mypy .
