@@ -12,6 +12,10 @@ echo "Starting isort"
 poetry run isort .
 echo "OK"
 
+echo "Starting mypy"
+poetry run mypy .
+echo "OK" 
+
 echo "Starting test with coverage"
 poetry run coverage run manage.py test
 poetry run coverage report -m

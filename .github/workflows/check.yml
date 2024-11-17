@@ -27,3 +27,7 @@ jobs:
 
       - name: Run isort check
         run: poetry run isort . --check-only
+
+      - name: Run Mypy
+        run: |
+        poetry run mypy .
