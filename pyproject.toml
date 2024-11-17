@@ -19,6 +19,7 @@ cryptography = "^43.0.3"
 mypy = "^1.13.0"
 django-stubs = "^5.1.1"
 types-pymysql = "^1.1.0.20241103"
+faker = "^33.0.0"
 
 [tool.black]
 line-length = 88
